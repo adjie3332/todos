@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todos - Aji Santoso</title>
+    
+        <link rel="stylesheet" href="asset/style.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    </head>
+    <body>
+        <header class="header">
+            <h1 style="text-align: center;">Todos Sederhana</h1>
+        </header>
+        <section id="todos">
+            <div class="todo-kegiatan shadow">
+                <h3 class="container-header text-center">Rencana Kegiatan</h3>
+
+                <div id="addTodo" class="text-center" data-bs-toggle="modal" data-bs-target="#form">
+                    <span>Tambahkan Rencana Kegiatan</span>
+                    <i class="fas fa-plus"></i> 
+                </div>
+
+                <form class="modal fade" id="form" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title text-center" id="modalLabel">Tambahkan Rencana Kegiatan</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group form-title">
+                                    <label for="title" class="form-label">Kegiatan</label>
+                                    <input type="text" class="form-control" id="titleInput" name="title" placeholder="Masukkan kegiatan">
+                                    <div id="msg"></div>
+                                </div>
+                                <div class="form-group form-title">
+                                    <label for="date" class="form-label">Tanggal Kegiatan</label>
+                                    <input type="date" class="form-control" id="dateInput" name="date">
+                                </div>
+                                <div class="form-group form-title">
+                                    <label for="description" class="form-label">Deskripsi</label>
+                                    <textarea type="text" class="form-control" id="descInput" name="description" placeholder="Masukkan deskripsi"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                <button type="submit" id="add" class="btn btn-primary">Tambahkan</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <h5 class="text-center">Data Rencana Kegiatan</h5>
+                <div id="dataKegiatan"></div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>Terimakasih telah mengunjungi website kami</p>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/adjie3332/"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/adjie3332/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.github.com/adjie3332/"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+            <dv class="footer-bottom">
+                <p>Copyright &copy;2022. designed by <span>Aji Santoso</span></p>
+            </dv>
+        </footer>
+        <script src="asset/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

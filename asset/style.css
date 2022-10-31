@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Todos */
+#todos {
+    background-color: #141D2B;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+.todo-kegiatan {
+    background-color: whitesmoke;
+    width: 500px;
+    height: 700px;
+    border-radius: 5px;
+    padding: 15px;
+    overflow-y: scroll;
+}
+.todo-kegiatan::-webkit-scrollbar {
+    width: 0 !important;
+}
+.todo-kegiatan h5 {
+    margin-top: 30px;
+}
+#addTodo {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.fa-plus {
+    color: white;
+    background-color: dodgerblue;
+    padding: 3px;
+    border-radius: 3px;
+}
+#dataKegiatan {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+#dataKegiatan div {
+    background-color: white;
+    border-radius: 6px;
+    padding: 5px;
+    display: grid;
+    gap: 4px;
+}
+#dataKegiatan div .options {
+    justify-self: center;
+    display: flex;
+    gap: 20px;
+}
+#dataKegiatan div .options i{
+    cursor: pointer;
+}
+#msg {
+    color: red;
+}
+/* END TODOS */
+
+/* Footer */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer {
+    background-color: whitesmoke;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: dimgray;
+}
+.socials a i{
+    font-size: 1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: blue;
+}
+.footer-bottom{
+    background: #3d3d3d;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    word-spacing: 2px;
+}
+/* End Footer */
